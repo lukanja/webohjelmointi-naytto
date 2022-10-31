@@ -1,0 +1,157 @@
+html, body {
+	height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  /*background-color: #012326; temporarily white*/ 
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1 {
+	font-family: Racing Sans One;
+	font-size: 24px;
+}
+
+h2 {
+	font-family: Racing Sans One;
+	font-size: 18px;
+}
+
+h3 {
+	font-family: Racing Sans One;
+	font-size: 16px;
+}
+
+table, td, th {
+	border: 2px solid #012840;
+	width: 600px;
+	color: #012840;
+	
+}
+
+input[type=submit] {
+	font-family: Racing Sans One;
+	font-size: 18px;
+	background-color: #012326;
+	color: white;
+	border: none;
+	padding: 15px 30px;
+	margin: 15px;
+	border-radius: 5px;
+	min-height: 30px; 
+    min-width: 120px;
+}
+
+.btn {
+	font-family: Roboto;
+	background-color: #012326;
+	color: white;
+	border: none;
+	padding: 5px 15px;
+	margin: 5px;
+	border-radius: 5px;
+	min-height: 30px; 
+	
+}
+
+.btn:hover, input[type=submit]:hover {
+      background-color: #F205B3;
+      transition: 0.3s;
+  }
+
+
+.wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 0 auto;
+	padding: 10px;
+}
+
+.wrapper > * {
+	flex: 1 100%;
+}
+
+
+.footer {
+	flex-shrink: 0;
+	color: white;
+	background-color: #012326;
+	justify-content: flex-start;
+	text-align: center;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	align-items: center;
+	font-family: Racing Sans One;
+	font-size: 24px;
+	padding: 5px;
+	color: white;
+	background-color: #012326;
+}
+
+.main {
+	padding: 20px;
+	text-align: left;
+}
+
+.aside-1 {
+	padding: 20px;
+	text-align: left;
+}
+.aside-2{
+	padding: 20px;
+	text-align: center;
+}
+
+.navigation {
+	display: flex;
+	color: white;
+	background-color:  #012326;
+	text-align: center;
+
+}
+
+a {
+	color:#F205B3;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	background-color: #F205B3;
+	transition: 0.3s;
+}
+
+a.imagelink
+{
+	padding: 5px;
+}
+
+a.imagelink:hover {
+	background-color: white;
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  .main { flex: 3 0px; }
+  .navigation { order: 1;}
+  .aside-1 { order: 2; }
+  .main    { order: 3; }
+  .aside-2 { order: 4; }
+  .footer  { order: 5; }
+}
