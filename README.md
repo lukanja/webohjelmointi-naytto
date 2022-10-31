@@ -1,4 +1,9 @@
-FINNISH COMMENTING
 # webohjelmointi-naytto
-Using XAMPP and MySql
-Build database first from renkaat.sql
+
+! Commenting is in Finnish !
+
+Local webpages using XAMPP and MySql
+
+HTML, CSS, PHP, Javascript
+
+<b>Build database first from renkaat.sql!</b>
