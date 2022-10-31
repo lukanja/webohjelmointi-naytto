@@ -1,6 +1,6 @@
 # webohjelmointi-naytto
 
-! Commenting is in Finnish !
+Language: Finnish !
 
 Local webpages using XAMPP and MySql
 
